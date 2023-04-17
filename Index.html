@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Conference-page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  
+    <!-- For bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!-- for style -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- For swiper slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+</head>
+  <body>
+
+    <!-- For Header-section -->
+    <Header>
+    <nav class="navigation">
+        <div class="container-1 ">
+            <div class="logo">
+                <img src="./assets/logo.png.webp" alt="image not found">
+            </div>
+            <div class="nav-social-items">
+                <ul class="nav-links">
+                    <li>HOME</li>
+                    <li>SPEAKERS</li>
+                    <li>EVENTS</li>
+                    <li>NEWS</li>
+                    <li>CONTACTS</li>
+                    <li><i class="bi bi-search"></i></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </Header>
+
+    <Main>
+        <div class="swiper slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="./assets/slider.png.webp" alt="" ></div>
+              <div class="swiper-slide"><img src="./assets/slider.png.webp" alt="" ></div>
+              <div class="swiper-slide"><img src="./assets/slider.png.webp" alt="" ></div>
+            </div>
+
+            <!--pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </Main>
+
+
+    <!-- For swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        // effect: 'fade',
+
+        // If we need pagination
+        pagination: {
+        el: '.swiper-pagination',
+    }});
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
